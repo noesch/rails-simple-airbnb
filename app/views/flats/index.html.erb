@@ -1,0 +1,17 @@
+<div class="container">
+  <h1>All of our beautiful flats</h1>
+  <br>
+  <% @flats.each do |flat| %>
+    <div class="cards">
+      <div class="card">
+        <h3><%= flat.name %></h3>
+        <p>Address: <%= flat.address %></p>
+        <p>Description: <%= flat.description %></p>
+        <div class="info">
+          <p><i class="fas fa-euro-sign"></i> <%= flat.price_per_night %></p>
+          <p><i class="fas fa-users"></i> <%= flat.number_of_guests %></p>
+        </div>
+      </div>
+      </div>
+    <% end %>
+</div>
